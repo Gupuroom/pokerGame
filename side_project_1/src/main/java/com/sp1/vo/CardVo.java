@@ -1,4 +1,4 @@
-package com.sp1.ctl;
+package com.sp1.vo;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,11 +9,12 @@ import lombok.ToString;
 @ToString
 public class CardVo
 {
-	private int num;
 	private int pattern;
+	private int num;
 	
-	public CardVo(int num ,int pattern){
-		this.num = num;
+	public CardVo(int pattern, int num)
+	{
 		this.pattern = pattern;
+		this.num = num;
 	}
 }

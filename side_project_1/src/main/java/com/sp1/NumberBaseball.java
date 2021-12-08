@@ -1,4 +1,4 @@
-package com.sp1.ctl;
+package com.sp1;
 
 public class NumberBaseball
 {

@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import com.sp1.ctl.CardVo;
-import com.sp1.ctl.DeckService;
-import com.sp1.ctl.DeckVo;
-import com.sp1.ctl.PokerService;
+import com.sp1.service.DeckService;
+import com.sp1.service.CardService;
+import com.sp1.vo.CardVo;
+import com.sp1.vo.DeckVo;
 
 /* 
  * TreeMap으로 구현한 이유
@@ -29,7 +29,7 @@ class Test_CountOverlapCard
 	@Test
 	void test()
 	{
-		PokerService pokerService = new PokerService();
+		CardService pokerService = new CardService();
 		DeckService deckService = new DeckService();
 		
 		// 랜덤 카드 7개 생성

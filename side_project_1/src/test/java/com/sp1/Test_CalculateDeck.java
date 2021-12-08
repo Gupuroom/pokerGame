@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 
-import com.sp1.ctl.DeckService;
-import com.sp1.ctl.DeckVo;
-import com.sp1.ctl.PokerService;
+import com.sp1.service.DeckService;
+import com.sp1.service.CardService;
+import com.sp1.vo.DeckVo;
 
 //숫자 리스트에서 중복제거했을 때 
 //원페어면 : -1
@@ -20,7 +20,7 @@ import com.sp1.ctl.PokerService;
 //포카드 = 포카드+ 트리플 : -5
 class Test_CalculateDeck
 {
-	PokerService pokerService = new PokerService();
+	CardService pokerService = new CardService();
 	DeckService deckService = new DeckService();
 	
 	// 덱 계산

@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 
-import com.sp1.ctl.CardVo;
-import com.sp1.ctl.DeckService;
-import com.sp1.ctl.DeckVo;
+import com.sp1.service.DeckService;
+import com.sp1.vo.CardVo;
+import com.sp1.vo.DeckVo;
 
 class Test_isPlushStraight
 {
