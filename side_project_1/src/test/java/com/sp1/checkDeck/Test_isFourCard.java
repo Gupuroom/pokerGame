@@ -7,6 +7,7 @@ import java.util.TreeMap;
 import org.junit.jupiter.api.Test;
 
 import com.sp1.service.DeckService;
+import com.sp1.vo.CardPattern;
 import com.sp1.vo.CardVo;
 import com.sp1.vo.ResultVo;
 
@@ -23,10 +24,10 @@ class Test_isFourCard
 		int mostCardNum = countNum.lastEntry().getValue();
 		
 		// isFourCard?
-		if(countOverlap == 4) // true
+		if (countOverlap == 4) // true
 		{
 			ResultVo resultVo = new ResultVo();
-			resultVo.setMostCard(new CardVo(4,mostCardNum));
+			resultVo.setMostCard(new CardVo(CardPattern.SPADE, mostCardNum));
 			resultVo.setResult("FourCard");
 			resultVo.setResultCode(002); // TODO: 코드 결정해야함.
 			return resultVo;
@@ -39,7 +40,7 @@ class Test_isFourCard
 	void test()
 	{
 		List<Integer> list = new ArrayList<Integer>();
-		list.add(5);
+		list.add(6);
 		list.add(6);
 		list.add(6);
 		list.add(3);
@@ -48,6 +49,6 @@ class Test_isFourCard
 		list.add(4);
 		
 		ResultVo result = isFourCard(list);
-		System.out.println(result.getMostCard().getNum()+" "+result.getResult()+"입니다.");
+		System.out.println(result.getMostCard().getNum() +" "+ result.getMostCard().getPattern().name() + " " + result.getResult() + "입니다.");
 	}
 }

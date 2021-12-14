@@ -1,5 +1,7 @@
 package com.sp1.vo;
 
+import java.util.regex.Pattern;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,10 +11,11 @@ import lombok.ToString;
 @ToString
 public class CardVo
 {
-	private int pattern;
-	private int num;
 	
-	public CardVo(int pattern, int num)
+	private int num;
+	private CardPattern pattern;
+	
+	public CardVo(CardPattern pattern, int num)
 	{
 		this.pattern = pattern;
 		this.num = num;
