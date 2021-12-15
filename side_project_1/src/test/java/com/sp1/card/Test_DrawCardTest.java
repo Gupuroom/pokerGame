@@ -18,7 +18,7 @@ class Test_DrawCardTest
 	@Test
 	void test()
 	{
-		startCardList = cardService.setStartCardList(); // 시작 카드 묶음 설정
+		List<CardVo> startCardList = cardService.setStartCardList(); // 시작 카드 묶음 설정
 
 		for(int i=0; i < 7;i++) {
 		CardVo card = cardService.drawCard(startCardList); //

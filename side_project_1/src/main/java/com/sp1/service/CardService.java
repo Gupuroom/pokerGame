@@ -14,7 +14,7 @@ public class CardService
 	{
 		List<CardVo> startCardList  = new ArrayList<CardVo>();
 		
-		for(int i = 1; i <= 4; i++) // 패턴
+		for(int i = 0; i <= 3; i++) // 패턴
 			for(int j = 1; j <= 13; j++) // 숫자
 				startCardList.add(new CardVo(i,j));
 		
@@ -29,7 +29,4 @@ public class CardService
 		
 		return card; 
 	}
-	
-	
-
 }

@@ -1,4 +1,4 @@
-package com.sp1.compareDeck;
+package com.sp1.card;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
